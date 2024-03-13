@@ -1,0 +1,56 @@
+// 共通カラー
+$Primary: #f8d32f;
+$onPrimary: #121212;
+$Secondary: #1b97a2;
+$onSecondary: #fafafa;
+$Error: #cf2e2e;
+$onError: #fafafa;
+
+$Gray_Lightest: #ebebeb; /*ボーダーまたはボーダー無し背景塗りに使用*/
+$Gray_Lighter: #cccccc;
+$Gray_Light: #a3a3a3;
+$Gray_Mideum: #7a7a7a;
+$Gray_Dark: #525252;
+$Gray_Darker: #292929;
+// $SlateGray: #f7f7f7;
+// $LightGray: #eeeeee;
+// $MediumGray: #cccccc;
+// $CharcoalGray: #cccccc;
+// $DarkGray: #cccccc;
+
+// ライトテーマ
+$LightTheme_Text: #121212;
+$LightTheme_TextAnnotation: #bbbbbb;
+$LightTheme_TextLink: #1b97a2;
+
+$LightTheme_Background: #fafafa;
+
+$LightTheme_SurfaceContainerLowest: #ebebeb;
+$LightTheme_SurfaceContainerLow: #a3a3a3;
+$LightTheme_SurfaceContainer: #7a7a7a;
+$LightTheme_SurfaceContainerHigh: #525252;
+$LightTheme_SurfaceContainerHighest: #292929;
+
+$LightTheme_Divider: #dddddd;
+$LightTheme_Outline: #cccccc;
+
+// ダークテーマ
+$DarkTheme_Text: #fafafa;
+$DarkTheme_TextAnnotation: #666666;
+$DarkTheme_TextLink: #1b97a2;
+
+$DarkTheme_Background: #121212;
+
+$DarkTheme_SurfaceContainerLowest: #292929;
+$DarkTheme_SurfaceContainerLow: #525252;
+$DarkTheme_SurfaceContainer: #7a7a7a;
+$DarkTheme_SurfaceContainerHigh: #a3a3a3;
+$DarkTheme_SurfaceContainerHighest: #ebebeb;
+
+$DarkTheme_Divider: #fafafa;
+$DarkTheme_Outline: #fafafa;
+
+// 指定カラー
+$Black: #000000;
+$Gray: #777777;
+$White: #ffffff;

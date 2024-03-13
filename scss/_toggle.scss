@@ -1,0 +1,39 @@
+.toggle-button {
+  display: inline-block;
+  position: relative;
+  width: 56px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: $Gray_Lightest;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.toggle-button:has(:checked) {
+  background-color: $Secondary;
+}
+
+.toggle-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+  background-color: $White;
+  content: "";
+  transition: left 0.4s;
+}
+
+.toggle-button.disabled-transition::after {
+  transition: none !important; /* transitionを無効に */
+}
+
+.toggle-button:has(:checked)::after {
+  left: 32px;
+}
+
+.toggle-button input {
+  display: none;
+}

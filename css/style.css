@@ -1,0 +1,544 @@
+@charset "UTF-8";
+/*ボーダーまたはボーダー無し背景塗りに使用*/
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 2rem;
+}
+
+.container .title_area {
+  width: 100%;
+  padding: 48px 0;
+  margin-bottom: 48px;
+}
+.container .title_area .content_inner {
+  max-width: 390px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.8rem;
+  background: none;
+}
+
+header {
+  font-size: 1rem;
+  padding: 24px 0;
+}
+header .content_inner {
+  max-width: 390px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 2rem;
+  background: none;
+}
+
+main {
+  max-width: 390px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+a {
+  color: #1b97a2;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border-top: 1px solid;
+  padding: 48px 0;
+  margin-top: 48px;
+}
+footer .content_inner {
+  max-width: 390px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.8rem;
+  background: none;
+}
+
+.btn_wrapper ul {
+  border-top: 1px solid #ebebeb;
+  margin: 0;
+  padding: 0;
+}
+.btn_wrapper ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.btn_wrapper ul li span {
+  font-size: 1rem;
+}
+
+.content_wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.content_wrapper_text {
+  border: 1px solid;
+  padding: 24px;
+  border-radius: 5px;
+  border-color: #dddddd;
+}
+.content_wrapper_text li {
+  margin-bottom: 16px;
+}
+
+.content_wrapper_form_element {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.content_wrapper_form_element fieldset {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 8px;
+}
+
+.content_wrapper_div_element {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+.content_wrapper_div_element .content_wrapper_inner {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  width: calc(50% - 10px);
+}
+.content_wrapper_div_element .content_wrapper_inner span {
+  text-align: center;
+  width: 100%;
+}
+.content_wrapper_div_element .content_wrapper_inner.bgkeep {
+  background: #ebebeb;
+  color: #525252;
+}
+.content_wrapper_div_element .content_wrapper_inner#bgchange_secondary.dark {
+  background: #1b97a2;
+}
+
+nav {
+  max-width: 390px;
+  margin: 0 auto;
+}
+nav ul {
+  padding: 24px 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.SurfaceContainer {
+  padding: 24px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Primary {
+  color: #f8d32f;
+}
+
+.Secondary {
+  color: #1b97a2;
+}
+
+.Error {
+  color: #cf2e2e;
+}
+
+.White {
+  color: #ffffff;
+}
+
+.Gray {
+  color: #777777;
+}
+
+.Black {
+  color: #000000;
+}
+
+.Annotation {
+  color: #bbbbbb;
+}
+
+.Gray_Lighter {
+  color: #cccccc;
+}
+
+.Gray_Light {
+  color: #a3a3a3;
+}
+
+.Gray_Mideum {
+  color: #7a7a7a;
+}
+
+.Gray_Dark {
+  color: #525252;
+}
+
+.Gray_Darker {
+  color: #292929;
+}
+
+html.light {
+  transition: 0.5s;
+  background-color: #fafafa; /* ライトな背景色 */
+  color: #121212; /* ライトなテキスト色 */
+}
+html.light .container .title_area {
+  background-color: #1b97a2;
+  color: #fafafa;
+}
+html.light a {
+  color: #1b97a2;
+}
+html.light footer {
+  border-color: #1b97a2;
+}
+html.light .SurfaceContainer {
+  background: #ebebeb;
+}
+html.light .SurfaceContainer .SurfaceContainer {
+  background: #a3a3a3;
+}
+html.light .SurfaceContainer .SurfaceContainer .SurfaceContainer {
+  background: #7a7a7a;
+}
+html.light .SurfaceContainer .SurfaceContainer .SurfaceContainer .SurfaceContainer {
+  background: #525252;
+}
+html.light .SurfaceContainer .SurfaceContainer .SurfaceContainer .SurfaceContainer .SurfaceContainer {
+  background: #292929;
+  color: #ebebeb;
+}
+
+html.dark {
+  transition: 0.5s;
+  background-color: #121212; /* ダークな背景色 */
+  color: #fafafa; /* ダークなテキスト色 */
+}
+html.dark .container .title_area {
+  background-color: #f8d32f;
+  color: #121212;
+}
+html.dark a {
+  color: #f8d32f;
+}
+html.dark .textbox {
+  border-color: #666666;
+}
+html.dark .textbox:focus {
+  border-color: #1b97a2;
+}
+html.dark .selectbox select {
+  border-color: #666666;
+}
+html.dark .selectbox select:focus {
+  border-color: #1b97a2;
+}
+html.dark .button {
+  background-color: #f8d32f;
+  color: #121212;
+}
+html.dark footer {
+  border-color: #f8d32f;
+}
+html.dark .SurfaceContainer {
+  background: #292929;
+}
+html.dark .SurfaceContainer .SurfaceContainer {
+  background: #525252;
+}
+html.dark .SurfaceContainer .SurfaceContainer .SurfaceContainer {
+  background: #7a7a7a;
+}
+html.dark .SurfaceContainer .SurfaceContainer .SurfaceContainer .SurfaceContainer {
+  background: #a3a3a3;
+}
+html.dark .SurfaceContainer .SurfaceContainer .SurfaceContainer .SurfaceContainer .SurfaceContainer {
+  background: #ebebeb;
+  color: #292929;
+}
+
+.toggle-button {
+  display: inline-block;
+  position: relative;
+  width: 56px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #ebebeb;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.toggle-button:has(:checked) {
+  background-color: #1b97a2;
+}
+
+.toggle-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  content: "";
+  transition: left 0.4s;
+}
+
+.toggle-button.disabled-transition::after {
+  transition: none !important; /* transitionを無効に */
+}
+
+.toggle-button:has(:checked)::after {
+  left: 32px;
+}
+
+.toggle-button input {
+  display: none;
+}
+
+html.font-gothic {
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  transition: 0.5s;
+}
+
+html.font-mincho {
+  font-family: serif;
+  transition: 0.5s;
+}
+html.font-mincho .selectbox select {
+  font-family: serif;
+}
+html.font-mincho .selectbox select option {
+  font-family: serif;
+}
+html.font-mincho .textbox,
+html.font-mincho .button {
+  font-family: serif;
+}
+
+/*セレクトボックス*/
+.selectbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.selectbox::after {
+  position: absolute;
+  right: 15px;
+  width: 10px;
+  height: 7px;
+  background-color: #525252;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  content: "";
+  pointer-events: none;
+}
+
+.selectbox select {
+  appearance: none;
+  width: 100%;
+  border: 3px solid;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #525252;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 16px;
+  cursor: pointer;
+}
+.selectbox select option {
+  background-color: #7a7a7a;
+  color: #ffffff;
+  display: block;
+}
+.selectbox select:focus {
+  border: 3px solid;
+  border-color: #1b97a2;
+  outline: none;
+}
+
+/*テキストボックス*/
+.textbox {
+  width: calc(100% - 38px);
+  padding: 16px 16px;
+  border: 3px solid;
+  border-radius: 3px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #ffffff;
+}
+.textbox:focus {
+  border: 3px solid;
+  border-color: #1b97a2;
+  outline: none;
+}
+
+/*チェックボックス*/
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 2em;
+  border: none;
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox label:has(:checked) {
+  color: #1b97a2;
+}
+
+.checkbox label::before,
+.checkbox label:has(:checked)::after {
+  content: "";
+}
+
+.checkbox label::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  padding: 4px;
+}
+
+.checkbox label:has(:checked)::before {
+  background-color: #1b97a2;
+  border: 1px solid;
+}
+
+.checkbox label:has(:checked)::after {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  transform: rotate(45deg);
+  width: 5px;
+  height: 16px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+.checkbox input {
+  display: none;
+}
+
+/*ラジオボタン*/
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em 2em;
+  border: none;
+}
+
+.radio label {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio label::before,
+.radio label::after {
+  border-radius: 50%;
+  content: "";
+}
+
+.radio label::before {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cccccc;
+}
+
+.radio label:has(:checked) {
+  color: #1b97a2;
+}
+
+.radio label:has(:checked)::before {
+  border: 1px solid #1b97a2;
+}
+
+.radio label::after {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: #ebebeb;
+}
+
+.radio label:has(:checked)::after {
+  background-color: #1b97a2;
+}
+
+.radio input {
+  display: none;
+}
+
+/*ボタン*/
+.button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 100vh;
+  font-weight: bold;
+  border: none;
+  background-color: #1b97a2;
+  color: #fafafa;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
+/*共通設定*/
+input:disabled,
+button:disabled,
+select:disabled,
+fieldset:disabled,
+label:disabled {
+  opacity: 0.3;
+  cursor: unset;
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,191 @@
+/*セレクトボックス*/
+.selectbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.selectbox::after {
+  position: absolute;
+  right: 15px;
+  width: 10px;
+  height: 7px;
+  background-color: $Gray_Dark;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  content: "";
+  pointer-events: none;
+}
+
+.selectbox select {
+  appearance: none;
+  width: 100%;
+  border: 3px solid;
+  border-radius: 3px;
+  background-color: #fff;
+  color: $Gray_Dark;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 16px;
+  cursor: pointer;
+  option {
+    background-color: $Gray_Mideum;
+    color: $White;
+    display: block;
+  }
+  &:focus {
+    border: 3px solid;
+    border-color: $Secondary;
+    outline: none;
+  }
+}
+
+/*テキストボックス*/
+.textbox {
+  width: calc(100% - 38px);
+  padding: 16px 16px;
+  border: 3px solid;
+  border-radius: 3px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: $White;
+  &:focus {
+    border: 3px solid;
+    border-color: $Secondary;
+    outline: none;
+  }
+}
+
+/*チェックボックス*/
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 2em;
+  border: none;
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5em;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox label:has(:checked) {
+  color: $Secondary;
+}
+
+.checkbox label::before,
+.checkbox label:has(:checked)::after {
+  content: "";
+}
+
+.checkbox label::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid $Gray_Lighter;
+  padding: 4px;
+}
+
+.checkbox label:has(:checked)::before {
+  background-color: $Secondary;
+  border: 1px solid;
+}
+
+.checkbox label:has(:checked)::after {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  transform: rotate(45deg);
+  width: 5px;
+  height: 16px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+.checkbox input {
+  display: none;
+}
+
+/*ラジオボタン*/
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em 2em;
+  border: none;
+}
+
+.radio label {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio label::before,
+.radio label::after {
+  border-radius: 50%;
+  content: "";
+}
+
+.radio label::before {
+  width: 24px;
+  height: 24px;
+  border: 1px solid $Gray_Lighter;
+}
+
+.radio label:has(:checked) {
+  color: $Secondary;
+}
+
+.radio label:has(:checked)::before {
+  border: 1px solid $Secondary;
+}
+
+.radio label::after {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: $Gray_Lightest;
+}
+
+.radio label:has(:checked)::after {
+  background-color: $Secondary;
+}
+
+.radio input {
+  display: none;
+}
+
+/*ボタン*/
+.button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 100vh;
+  font-weight: bold;
+  border: none;
+  background-color: $Secondary;
+  color: $onSecondary;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/*共通設定*/
+input,
+button,
+select,
+fieldset,
+label {
+  &:disabled {
+    opacity: 0.3;
+    cursor: unset;
+    pointer-events: none;
+  }
+}

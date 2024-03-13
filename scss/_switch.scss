@@ -1,0 +1,83 @@
+html.light {
+  transition: 0.5s;
+  background-color: $LightTheme_Background; /* ライトな背景色 */
+  color: $LightTheme_Text; /* ライトなテキスト色 */
+  .container {
+    .title_area {
+      background-color: $Secondary;
+      color: $onSecondary;
+    }
+  }
+  a {
+    color: $Secondary;
+  }
+  footer {
+    border-color: $Secondary;
+  }
+  .SurfaceContainer {
+    background: $LightTheme_SurfaceContainerLowest;
+    .SurfaceContainer {
+      background: $LightTheme_SurfaceContainerLow;
+      .SurfaceContainer {
+        background: $LightTheme_SurfaceContainer;
+        .SurfaceContainer {
+          background: $LightTheme_SurfaceContainerHigh;
+          .SurfaceContainer {
+            background: $LightTheme_SurfaceContainerHighest;
+            color: $LightTheme_SurfaceContainerLowest;
+          }
+        }
+      }
+    }
+  }
+}
+
+html.dark {
+  transition: 0.5s;
+  background-color: $DarkTheme_Background; /* ダークな背景色 */
+  color: $DarkTheme_Text; /* ダークなテキスト色 */
+  .container {
+    .title_area {
+      background-color: $Primary;
+      color: $onPrimary;
+    }
+  }
+  a {
+    color: $Primary;
+  }
+  .textbox {
+    border-color: $DarkTheme_TextAnnotation;
+    &:focus {
+      border-color: $Secondary;
+    }
+  }
+  .selectbox select {
+    border-color: $DarkTheme_TextAnnotation;
+    &:focus {
+      border-color: $Secondary;
+    }
+  }
+  .button {
+    background-color: $Primary;
+    color: $onPrimary;
+  }
+  footer {
+    border-color: $Primary;
+  }
+  .SurfaceContainer {
+    background: $DarkTheme_SurfaceContainerLowest;
+    .SurfaceContainer {
+      background: $DarkTheme_SurfaceContainerLow;
+      .SurfaceContainer {
+        background: $DarkTheme_SurfaceContainer;
+        .SurfaceContainer {
+          background: $DarkTheme_SurfaceContainerHigh;
+          .SurfaceContainer {
+            background: $DarkTheme_SurfaceContainerHighest;
+            color: $DarkTheme_SurfaceContainerLowest;
+          }
+        }
+      }
+    }
+  }
+}
